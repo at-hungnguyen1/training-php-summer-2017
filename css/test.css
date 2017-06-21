@@ -105,35 +105,67 @@
     body{
         font-size: 12px;
     }
-    .topweb, .listmenu, .menubar {
-        margin-left: 100px;
-        margin-right: 100px;
+    .container{
+        margin: 10px 100 0px 100px;
+        max-width: 1240px;
     }
     .topweb{
+        width: 50%;
+        float: left;
+    }
+    .topweb h3{
+        padding-top: 18px;
 
     }
-    #floathere{
-        margin-top: 10px;
+    .logo-left{
         float: left;
     }
-    #imgright{
+    .logo-right{
         clear;
         float: right;
+        padding-top: 18px;
+
+        width: 20%;
+    }
+    .logo-right img{
+        float: left;
+    }
+    .logo-right p{
+        padding-top: 9px;
     }
     .menubar {
+        margin-top: 20px;
         float: left;
-        max-width: 1280px;
+        width: 100%;
+        border: solid black 1px;
+        border-left: none;
+        border-right: none;
+        border-bottom: none;
     }
     .menusub1 {
         list-style-type: none;
+        margin-left: 100px;
+        margin-right: 100px;
         overflow: hidden;
     }
     .menusub1 li{
         float: left;
         /*margin-right: 30px;*/
-        margin-left: 10px;
-        margin-right: 40px;
+        border: solid 1px black;
+        border-top: none;
+        border-left: none;
+        border-bottom: none;
+    }
+    .menusub1 a{
+        display:inline-block;
+        padding-left:  26px;
+        padding-right: 26px;
+        padding-top: 20px;
+        padding-bottom: 20px;
     }
     #speciesid{
+        clear;
         float: right;
+        padding-top: 13px;
+        border: none;
     }
