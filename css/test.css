@@ -98,24 +98,19 @@
         vertical-align:middle;
     }
     /* start your css */
-    main {
-        margin-left: 100px;
-        margin-right: 100px;
-    }
     body{
         font-size: 12px;
     }
     .container{
-        margin: 10px 100 0px 100px;
+        margin: auto;
         max-width: 1240px;
     }
     .topweb{
-        width: 50%;
+        width: 80%;
         float: left;
     }
     .topweb h3{
         padding-top: 18px;
-
     }
     .logo-left{
         float: left;
@@ -142,10 +137,8 @@
         border-right: none;
         border-bottom: none;
     }
-    .menusub1 {
+    .menusub1{
         list-style-type: none;
-        margin-left: 100px;
-        margin-right: 100px;
         overflow: hidden;
     }
     .menusub1 li{
@@ -167,5 +160,153 @@
         clear;
         float: right;
         padding-top: 13px;
+        padding-right: 5px;
         border: none;
+    }
+    .banner{
+        margin: 0 auto;
+        max-width: 1366;
+    }
+    .banner img{
+        width: 100%;
+    }
+    main{
+        max-width: 1240px;
+        margin: auto;
+        display: block;
+        margin-top: 40px;
+    }
+    .aside-left{
+        width: 24%;
+        float: left;
+        margin-right: 2%;
+    }
+    .aside-left ul li{
+        list-style-type: none;
+    }
+    .aside-left p{
+        margin-top: 10px;
+        margin-bottom: 20px;
+        background-color: rgb(217, 228, 233);
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    .aside-left ul li ul li{
+        padding-bottom :15px;
+        list-style-type: disc;
+        margin-left: 15px;
+    }
+    .aside-left .calendar{
+        margin-top: 15px;
+        background-color: rgb(217, 228, 233);
+    }
+    .aside-left .calendar form{
+        padding: 5%;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .aside-left .calendar form input{
+        padding-top: 2%;
+        padding-bottom: 2%;
+        margin-bottom: 4%;
+    }
+    .aside-left .calendar p{
+        padding: 5%;
+        margin-bottom: 0px;
+    }
+    /*main col */
+    .col-main{
+        width: 74%;
+        display: table;
+        list-style-type: none;
+    }
+    .col-main .item{
+        padding: 10px;
+        width: 33.3333%;
+        display: block;
+        float: left;
+        box-sizing: border-box;
+    }
+    .col-main .item .subitem{
+        border: solid 1px rgb(217, 228, 233);
+    }
+    .col-main .item .subitem p, h3{
+        padding-left: 10px;
+        padding-top: 10px;
+        padding-bottom: 40px;
+        padding-right: 40px;
+    }
+    .col-main .item .subitem h3{
+        padding-bottom: 0px;
+    }
+    .col-main .item:nth-child(3n+1){
+        clear:left;
+    }
+    /*footer*/
+    footer{
+        background-color: rgb(98, 198, 248);
+        margin-top: 40px;
+    }
+    .footer-container{
+        max-width: 1240px;
+        margin: auto;
+        display: block;
+    }
+    .footer-end{
+        padding-top: 20px;
+        margin-bottom: 20px;
+    }
+    .clearstyle{
+        list-style-type: none;
+        padding-top: 40px;
+        margin-bottom: 60px;
+    }
+    .footer-menu1{
+        float: left;
+        width: 33.33333%
+    }
+    .footer-menu1 li{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .footer-menu1 ul li{
+        margin-left: 20px;
+    }
+    
+    .footer-menu1 li ul li img{
+        float: left;
+    }
+    .footer-menu1 .clearstyle1 {
+        list-style-type: none;
+    }
+    .footer-menu1 .clearstyle1 li{
+        margin-left: 0px;
+    }
+    .footer-menu1 .clearstyle1 li img{
+        float: left;
+    }
+    .footer-menu1 .clearstyle1 li p{
+        padding-top: 5px;
+        padding-left: 5px;
+    }
+    .footer-menu1 .clearstyle1 li img:nth-child(2n+1){
+        clear: left;
+    }
+    .copyright{
+        clear:both;
+        border: solid .5px white;
+        border-left: none;
+        border-bottom: none;
+        border-right: none;
+        box-sizing: border-box;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .copyright .copyright-left{
+        float: left;
+    }
+    .copyright .copyright-right{
+        clear;
+        float: right;
+        position: right;
     }

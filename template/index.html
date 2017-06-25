@@ -1,5 +1,6 @@
 <html>
 	<head>
+	  <meta charset="UTF-8">
 	<title>Project1</title>
 	<link rel="stylesheet" type="text/css" href="../css/test.css">
 	</head>
@@ -16,6 +17,7 @@
 		</div>
 	</div>
 	<div class = "menubar">
+		<div class = "container">
 			<ul class = "menusub1">
 			<li><a href = "#">TRANG CHỦ</a></li>
 			<li><a href = "#">GIƠÍ THIÊJU</a></li>
@@ -29,18 +31,21 @@
 				<img src="../images/google.png">
 			</li>
 			</ul>
+		</div>
 	</div>
+	<div class = "banner">
 		<img src = "../images/banner.jpg">
+	</div>
 	</header>
 	<main>
-	<SECTION>
+	<SECTION class = "main-container">
 	<!menu nguoi lon>
-	<aside>
+	<aside class = "aside-left">
 		<div>
 		<ul>
 			<!menu1>
 			<li>
-			Người lớn
+			<p>Người lớn</p>
 			<ul>
 				<li><a href = "#">Đau cổ-vai-tay</a></li>
 				<li><a href = "#">Đau cột sống</a></li>
@@ -55,7 +60,7 @@
 			</li>
 			<!//menu2>
 			<li>
-			trẻ em
+			<p>trẻ em</p>
 			<ul>
 				<li><a href = "#">Đau cổ-vai-tay</a></li>
 				<li><a href = "#">Đau cột sống</a></li>
@@ -71,99 +76,116 @@
 		</ul>
 		</div>
 	<!dat lich kham>
-		<div>
+		<div class = "calendar">
 		<p>Đặt lịch khám</p>
 		<form>
 		<input type ="text" placeholder="Họ & Tên" name ="username"/>
 		<br>
 		<input type ="text" placeholder="Địa chỉ" name = "address"/>
 		<br>
-		<input type ="text" placeholder="Số điện thoại" name = "phonenumber"/>
+		<input type="text" placeholder="Số điện thoại" name = "phonenumber"/>
 		<br>
-		<input type ="date" placeholder="Thời gian" name = "time"/>
+		<input type="date" placeholder="Thời gian" name = "time"/>
 		<br>
-		<input type ="submit" name = "submit" value = "Đặt lịch">
+		<input type ="submit" name = "submit" value = "Đặt lịch" class "input1">
 		</form>
 		</div>
 	</aside>
 	<!benh>
-		<div>
+	<ul class = "col-main">
+		<li class ="item">
+		<div class ="subitem">	
 		<img src="../images/new-1.jpg">
 		<h3>Đau cổ vai tay</h3>
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna </p>
 		</div>
-		<div>
+		</li>
+		<li class ="item">
+		<div class ="subitem">
 		<img src="../images/new-2.jpg">
 		<h3>Đau cổ vai tay</h3>
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna </p>
 		</div>
-		<div>
+		</li>
+		<li class ="item">
+		<div class ="subitem">
 		<img src="../images/new-3.jpg">
 		<h3>Đau cổ vai tay</h3>
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna </p>
 		</div>
-		<div>
+		</li>
+		<li class ="item">
+		<div class ="subitem">
 		<img src="../images/new-4.jpg">
 		<h3>Đau cổ vai tay</h3>
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna </p>
 		</div>
-		<div>
+		</li>
+		<li class ="item">
+		<div class ="subitem">
 		<img src="../images/new-5.jpg">
 		<h3>Đau cổ vai tay</h3>
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna </p>
 		</div>
-		<div>
+		</li>
+		<li class ="item">
+		<div class ="subitem">
 		<img src="../images/new-6.jpg">
 		<h3>Đau cổ vai tay</h3>
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna </p>
-		</div>					
-		<div>
+		</div>
+		</li>					
+		<li class ="item">
+		<div class ="subitem">
 		<img src="../images/new-7.jpg">
 		<h3>Đau cổ vai tay</h3>
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna </p>
-		</div>			
-		<div>
+		</div>
+		</li>			
+		<li class ="item">
+		<div class ="subitem">
 		<img src="../images/new-8.jpg">
 		<h3>Đau cổ vai tay</h3>
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna </p>
-		</div>	
-	</SECTION>
+		</div>
+		</li>
+	</>	
 	</main>
 	<footer>
-	<!--
+	<div class = "footer-container">
 		<!menu>
-		<section>
-		<ul>
-		<li>VE PHONG KHAM
+		<ul class = "clearstyle">
+		<li class = "footer-menu1">VE PHONG KHAM
 			<ul>
 				<li><a href ="#">GIOI THIEU CHUNG</a></li>
 				<li><a href ="#">NHAN LUC</a></li>
 				<li><a href ="#">TRANG THIET BI VA CO SO VAT CHAT</a></li>
 			</ul>
 		</li>
-		<li>HO TRO
+		<li class = "footer-menu1">HO TRO
 			<ul>
 				<li><a href ="#">TU VAN SUC KHOE</a></li>
 				<li><a href ="#">Y HOC THUONG THUC</a></li>
 				<li><a href ="#">DAT LICH KHAM</a></li>
 			</ul>
 		</li>
-		<li>KET NOI XA HOI
-			<ul>
-				<li><a href ="#"><img src ="../images/icon-facebook.png">FACEBOOK</a></li>
-				<li><a href ="#"><img src ="../images/icon-youtube.png">YOUTUBE</a></li>
-				<li><a href ="#"><img src ="../images/google.png">GOOGLE</a></li>
+		<li class = "footer-menu1">KET NOI XA HOI
+			<ul class = "clearstyle1">
+				<li><a href ="#"><img src ="../images/icon-facebook.png"><p>FACEBOOK</p></a></li>
+				<li><a href ="#"><img src ="../images/icon-youtube.png"><p>YOUTUBE</p></a></li>
+				<li><a href ="#"><img src ="../images/google.png"><p>GOOGLE</p></a></li>
 			</ul>
 		</li>
 		</ul>
-		</section>
-		<!ban quyen>
-		<div>
-			<p>BAN QUYEN THUOC PHONG KHAM CHUYEN KHOA
-			<p>PHAT TRIEN BOI KOKO.DUONGQUA
 		</div>
-		-->
-		<img src="../images/Layer-34.png">
+	</div>
+	<!ban quyen>
+	<div class = "copyright">
+		<div class = "footer-container footer-end">
+			<p class = "copyright-left">BAN QUYEN THUOC PHONG KHAM CHUYEN KHOA</p>
+			<p class = "copyright-right">PHAT TRIEN BOI KOKO.DUONGQUA</p>
+		</div>
+	</div>
 	</footer>
 	</body>
 </html>
