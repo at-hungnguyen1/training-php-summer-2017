@@ -1,0 +1,313 @@
+    @import 'color';
+    html, body, div, span, object, iframe,
+    h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+    abbr, address, cite, code,
+    del, dfn, em, img, ins, kbd, q, samp,
+    small, strong, sub, sup, var,
+    b, i,
+    dl, dt, dd, ol, ul, li,
+    fieldset, form, label, legend,
+    table, caption, tbody, tfoot, thead, tr, th, td,
+    article, aside, canvas, details, figcaption, figure, 
+    footer, header, hgroup, menu, nav, section, summary,
+    time, mark, audio, video {
+        margin:0;
+        padding:0;
+        border:0;
+        outline:0;
+        font-size:100%;
+        vertical-align:baseline;
+        background:transparent;
+    }
+
+    body {
+        line-height:1;
+    }
+
+    img{
+        max-width: 100%;
+    }
+
+    article,aside,details,figcaption,figure,
+    footer,header,hgroup,menu,nav,section { 
+        display:block;
+    }
+
+    nav ul {
+        list-style:none;
+    }
+
+    blockquote, q {
+        quotes:none;
+    }
+
+    blockquote:before, blockquote:after,
+    q:before, q:after {
+        content:'';
+        content:none;
+    }
+
+    a {
+        margin:0;
+        padding:0;
+        font-size:100%;
+        vertical-align:baseline;
+        background:transparent;
+        text-decoration: none;
+    }
+
+    /* change colours to suit your needs */
+    ins {
+        background-color:#ff9;
+        color:#000;
+        text-decoration:none;
+    }
+
+    /* change colours to suit your needs */
+    mark {
+        background-color:#ff9;
+        color:#000; 
+        font-style:italic;
+        font-weight:bold;
+    }
+
+    del {
+        text-decoration: line-through;
+    }
+
+    abbr[title], dfn[title] {
+        border-bottom:1px dotted;
+        cursor:help;
+    }
+
+    table {
+        border-collapse:collapse;
+        border-spacing:0;
+    }
+
+    /* change border colour to suit your needs */
+    hr {
+        display:block;
+        height:1px;
+        border:0;   
+        border-top:1px solid #cccccc;
+        margin:1em 0;
+        padding:0;
+    }
+
+    input, select {
+        vertical-align:middle;
+    }
+    /* start your css */
+.container:before{
+	content: '';
+	clear: both;
+}   
+.container{
+	margin: auto;
+    max-width: 1240px;
+}
+.container:after{
+	content: '';
+	clear: both;
+}
+
+.header-top{
+	max-height: 50px;
+	padding-top: 18px;
+	.logo{
+		width: 79%;
+		float: left;
+		padding-bottom: 18px;
+		img{
+			float: left;
+		}
+		.introduce{
+			margin-top: 15px;
+			padding-left: 80px;
+		}
+	}
+	.contract{
+		width: 21%;
+		float: right;
+		margin-top: 15px;
+		.contract-modifier{
+			float: left;
+		}
+		.mini-contract{
+			padding-top: 5px;
+			padding-left: 5px;
+		}
+	}
+}
+
+.header-bottom{
+	clear: both;
+	border: solid 0.1px gray;
+	border-left: none;
+	border-right: none;
+	border-bottom: none;
+	.main-menu{
+		width: 80%;
+		list-style-type: none;
+		li{
+			float: left;
+			border: solid 0.1px $color_aside;
+			border-left: none;
+			border-top: none;
+			border-bottom: none;
+			box-sizing: border-box;
+			padding: 0 10px;
+			a{
+				margin-top: 30px;
+			}
+		}
+	}
+	.social{
+		width: 20%;
+		padding-right: 0px;
+		float: right;
+		img{
+			float: right;
+		}
+	}
+}
+
+.banner{
+	max-width: 1366px;
+	margin: auto;
+}
+.main-content{
+	max-width: 1366px;
+	margin: auto;
+	margin-bottom: 20px;
+	.container{
+		margin-top: 30px;
+		margin-bottom: 20px;
+	}
+}
+
+.leftside{
+	width: 24%;
+	float: left;
+}
+.block{
+		p{
+			background-color: $color_aside;
+		}
+		ul{
+			list-style-type: none;
+		}
+}
+.block-menu{
+	p{
+		padding: 10px;
+	}
+	.havestyle{
+		list-style-type: disc;
+		li{
+		padding: 10px 10px 10px 0px;
+		margin-left: 30px;
+		}
+	}
+}
+.block-form{
+	background-color: $color_aside;
+	.mini-container{
+		padding: 10px;
+		p{
+			padding: 10px;
+			padding-left: 0px;
+		}
+		form{
+			text-align: center;
+		}
+		input{
+			width: 100%;
+			margin-bottom: 10px;
+			padding: 10px;
+		}
+		input[type=submit]{
+			width: 50%;
+			background-color: green;
+			border-color: green;
+		}
+	}
+}
+
+.col-main{
+	width: 74%;
+	float: right;
+	.news-list{
+		list-style-type: none;
+		display: table;
+		.item{
+			width: 33.3333%;
+			float: left;
+			.inner{
+				border: solid .1px $color_aside;
+				box-sizing: border-box;
+				margin-right: 3.5%;
+				margin-bottom: 3%;
+				position: relative;
+				h3{
+					font-size: 150%;
+					padding: 10px;
+				}
+				p{
+					font-size: 90%;
+					padding: 10px;
+					padding-bottom: 30px;
+				}
+				.arrow{
+					clear: both;
+					position: absolute;
+					right: 0;
+					bottom: 0;
+				}
+			}
+		}
+		.item:nth-child(3n+1){
+			clear: left;
+		}
+	}
+}
+.footer-container{
+	clear: both;
+	max-width: 1366px;
+	background-color: $color_footer;
+	.footer-menu{
+		list-style-type: none;
+		padding-top: 20px;
+	}
+}
+.footer-infor{
+		width: 33.3333%;
+		float: left;
+		li{
+			margin: 15px;
+		}
+		.notype{
+			list-style-type: none;
+			margin: 0px;
+			img{
+				float: left;
+				margin-right: 5px;
+			}
+			p{
+				padding: 5px;
+				padding-bottom: 0px;
+			}
+		}
+}
+.footer-end{
+	border: solid .1px $color_aside;
+	border-bottom: none;
+	border-left: none;
+	border-right: none;
+	.copyright-left{
+		float: left;
+	}
+	.copyright-right{
+	}
+}

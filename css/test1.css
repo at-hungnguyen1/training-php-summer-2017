@@ -1,0 +1,367 @@
+    html, body, div, span, object, iframe,
+    h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+    abbr, address, cite, code,
+    del, dfn, em, img, ins, kbd, q, samp,
+    small, strong, sub, sup, var,
+    b, i,
+    dl, dt, dd, ol, ul, li,
+    fieldset, form, label, legend,
+    table, caption, tbody, tfoot, thead, tr, th, td,
+    article, aside, canvas, details, figcaption, figure, 
+    footer, header, hgroup, menu, nav, section, summary,
+    time, mark, audio, video {
+        margin:0;
+        padding:0;
+        border:0;
+        outline:0;
+        font-size:100%;
+        vertical-align:baseline;
+        background:transparent;
+    }
+
+    body {
+        line-height:1;
+    }
+
+    img{
+        max-width: 100%;
+    }
+
+    article,aside,details,figcaption,figure,
+    footer,header,hgroup,menu,nav,section { 
+        display:block;
+    }
+
+    nav ul {
+        list-style:none;
+    }
+
+    blockquote, q {
+        quotes:none;
+    }
+
+    blockquote:before, blockquote:after,
+    q:before, q:after {
+        content:'';
+        content:none;
+    }
+
+    a {
+        margin:0;
+        padding:0;
+        font-size:100%;
+        vertical-align:baseline;
+        background:transparent;
+        text-decoration: none;
+    }
+
+    /* change colours to suit your needs */
+    ins {
+        background-color:#ff9;
+        color:#000;
+        text-decoration:none;
+    }
+
+    /* change colours to suit your needs */
+    mark {
+        background-color:#ff9;
+        color:#000; 
+        font-style:italic;
+        font-weight:bold;
+    }
+
+    del {
+        text-decoration: line-through;
+    }
+
+    abbr[title], dfn[title] {
+        border-bottom:1px dotted;
+        cursor:help;
+    }
+
+    table {
+        border-collapse:collapse;
+        border-spacing:0;
+    }
+
+    /* change border colour to suit your needs */
+    hr {
+        display:block;
+        height:1px;
+        border:0;   
+        border-top:1px solid #cccccc;
+        margin:1em 0;
+        padding:0;
+    }
+
+    input, select {
+        vertical-align:middle;
+    }
+    /* start your css */
+    body{
+        font-size: 13px;
+    }
+    li:hover, li:active{
+        background-color: yellow;
+        font-size: 150%;
+        transition: .5s;
+    }
+    .container{
+        margin: auto;
+        max-width: 1240px;
+    }
+    .logo{
+        width: 80%;
+        float: left;
+    }
+    .logo .introduce{
+        float: left;
+    }
+    .logo .introduce .introduce1{
+        padding-top: 15px;
+        padding-bottom: 0px;
+        padding-left: 5px;
+        font-size: 130%;
+        text-align: center;
+    }
+    h3 {
+        font-size: 24px;
+    }
+    .logo-left{
+        float: left;
+    }
+    .logo-right{
+        clear;
+        float: right;
+        padding-top: 18px;
+
+        width: 18%;
+    }
+    .logo-right img{
+        float: left;
+    }
+    .logo-right p{
+        padding-top: 9px;
+    }
+    .logo-right p>span{
+        color: rgb(98, 198, 248);
+    }
+    .navbar {
+        margin-top: 20px;
+        float: left;
+        width: 100%;
+        border: solid black 1px;
+        border-left: none;
+        border-right: none;
+        border-bottom: none;
+    }
+    .navmenu{
+        list-style-type: none;
+        overflow: hidden;
+    }
+    .navmenu li{
+        float: left;
+        /*margin-right: 30px;*/
+        border: solid 1px black;
+        border-top: none;
+        border-left: none;
+        border-bottom: none;
+    }
+    .navmenu a{
+        display:inline-block;
+        padding-left:  26px;
+        padding-right: 26px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    #social{
+        clear;
+        float: right;
+        padding-top: 13px;
+        padding-right: 5px;
+        border: none;
+    }
+    .banner{
+        margin: 0 auto;
+        max-width: 1366;
+    }
+    .banner img{
+        width: 100%;
+    }
+    main{
+        max-width: 1240px;
+        margin: auto;
+        display: block;
+        margin-top: 40px;
+    }
+    .aside-left{
+        width: 24%;
+        float: left;
+        margin-right: 2%;
+    }
+    .aside-left ul li{
+        list-style-type: none;
+    }
+    .aside-left ul li:hover{
+        background-color: white;
+    }
+    .aside-left ul li .left{
+        width: 100%;
+        float: left;
+    }
+    .aside-left ul li .right{
+        width: 20%;
+        float: right;
+        padding-top: 15px;
+        margin-top: 15px;
+    }
+    .aside-left p{
+        margin-top: 10px;
+        margin-bottom: 20px;
+        background-color: rgb(217, 228, 233);
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    .aside-left ul li ul{
+        clear: both;
+    }
+    .aside-left ul li ul li{
+        padding-bottom :15px;
+        list-style-type: disc;
+        margin-left: 15px;
+    }
+    .aside-left ul li ul li:hover{
+        background-color: red;
+        font-size: 150%;
+    }
+    .aside-left .calendar{
+        margin-top: 15px;
+        background-color: rgb(217, 228, 233);
+    }
+    .aside-left .calendar form{
+        padding: 5%;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .aside-left .calendar form input{
+        padding-top: 2%;
+        padding-bottom: 2%;
+        margin-bottom: 4%;
+    }
+    .aside-left .calendar form input[type=submit]{
+        background-color: green;
+        border-color: green;
+    }
+    .aside-left .calendar p{
+        padding: 5%;
+        margin-bottom: 0px;
+    }
+    .col-main{
+        width: 74%;
+        display: table;
+        list-style-type: none;
+    }
+    .col-main .item{
+        padding: 10px;
+        width: 33.3333%;
+        display: block;
+        float: left;
+        box-sizing: border-box;
+    }
+    .col-main .item .subitem{
+        border: solid 1px rgb(217, 228, 233);
+    }
+    .col-main .item .subitem p, h3{
+        padding-left: 10px;
+        padding-top: 10px;
+        padding-bottom: 40px;
+        padding-right: 40px;
+    }
+    .col-main .item .subitem h3{
+        padding-bottom: 0px;
+    }
+    .col-main .item .subitem .arrow{
+        position: relative;
+    }
+    .col-main .item .subitem .arrow img{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 5%;
+    }
+    .col-main .item:nth-child(3n+1){
+        clear:left;
+    }
+    footer{
+        background-color: rgb(98, 198, 248);
+        margin-top: 40px;
+    }
+    .footer-container{
+        max-width: 1240px;
+        margin: auto;
+        display: block;
+    }
+    .footer-end{
+        padding-top: 20px;
+        margin-bottom: 20px;
+    }
+    .footer-menu{
+        list-style-type: none;
+        padding-top: 40px;
+        margin-bottom: 60px;
+    }
+    .footer-menu li:hover{
+        background-color: rgb(98, 198, 248);
+    }
+    .footer-menu1{
+        float: left;
+        width: 33.33333%
+    }
+    .footer-menu1 li{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .footer-menu1 li:hover{
+        background-color: red;
+    }
+    .footer-menu1 ul li{
+        margin-left: 20px;
+    }
+    
+    .footer-menu1 li ul li img{
+        float: left;
+    }
+    .footer-menu1>ul {
+        list-style-type: none;
+    }
+    .footer-menu1>ul li{
+        margin-left: 0px;
+    }
+    .footer-menu1>ul li img{
+        float: left;
+    }
+    .footer-menu1>ul li p{
+        padding-top: 5px;
+        padding-left: 5px;
+    }
+    .footer-menu1>ul li img:nth-child(2n+1){
+        clear: left;
+    }
+    .copyright{
+        clear:both;
+        border: solid .5px white;
+        border-left: none;
+        border-bottom: none;
+        border-right: none;
+        box-sizing: border-box;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .copyright .copyright-left{
+        float: left;
+    }
+    .copyright .copyright-right{
+        clear;
+        float: right;
+        position: right;
+    }
